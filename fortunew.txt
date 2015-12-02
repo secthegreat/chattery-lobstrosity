@@ -1,0 +1,12 @@
+#!/bin/bash
+# For/Mail/Fortune Lab 3
+# Steven Corbin
+# 09/23/2015
+
+FORT=$(fortune)
+
+LST=$(who | cut -f1 -d" " | sort | unique)
+for i in $LST
+ do
+   echo $FORT | mail -s"Fortune of the Day" $i
+ done

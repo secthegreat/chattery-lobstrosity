@@ -1,0 +1,57 @@
+@charset "utf-8";
+#header {
+    background-color:#f56403;
+    border-color: red;
+    border-style: solid;
+    color:#000000;
+    padding:8px;
+    text-align:center;
+}
+#menu {
+    background-color:#f56403;
+    border-color: red;
+    border-style: solid;
+    float:left;
+    height:2200px;
+    line-height:30px;
+    padding:6px;	
+    width:80px;
+}
+#selection {
+    border-color: white;
+    border-style: solid;
+    color:#ffffff;
+    left: 100px;
+    position: relative;
+    width:1215px;
+}
+#foot {
+    background-color:#f56403;
+    border-color: red;
+    border-style: solid;
+    clear:both;
+    color:#000000;
+    padding:2px;
+    text-align:right;
+}
+body {
+  background-image: url("faces.jpg");
+  color:#ffffff;
+  padding: 2px;
+  
+}
+#translation {
+		font-family: 'Cabin';	
+		font-size: 75px;
+	}
+a:link {
+  background-color:transparent;
+  color: white;
+  text-decoration: bold;
+}
+a:visited {
+  
+  background-color:transparent;
+  color: white;
+  text-decoration: bold;
+}

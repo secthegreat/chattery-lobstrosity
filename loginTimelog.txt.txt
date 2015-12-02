@@ -1,0 +1,50 @@
+#!/usr/bin/bash
+# Steven Corbin
+# Lab 09 - Linux 210
+
+last > last_output
+
+last | grep '+' > day_more && last | grep -v '+' > day_less
+# list of separate sessions completed
+
+egrep -v '(00:00|logged|^$|wtmp|system)' last_output | sed 's/[()]//g' > last_clean
+cut -d' ' -f1 last_clean | sort -u > unique_users
+
+# start the HTML
+HEADER='<DOCTYPE html><head></head><body><pre>'
+FOOTER='</body></pre></html>'
+echo $HEADER > /home/scorbin1/public_html/loginTime.html
+
+for user in $(cat unique_users)
+do
+# vars for totals
+minute=0
+tm=0
+hour=0
+th=0
+day=0
+td=0
+
+for time in $(awk /^${user}/'{print $NF}' last_clean)
+do
+temp=$(echo ${time} | cut -d+ -f1)
+if [ ${time} = ${temp} ]; then
+day=0
+hour=$(echo ${time} | cut -d: -f1 | sed 's/^0//')
+else
+day=$(echo ${time} | cut -d+ -f1)
+hour=$(echo ${time} | cut -d+ -f2 | cut -d: -f1 | sed 's/^0//')
+fi
+# sed removes excess zeros
+minute=$(echo ${time} | cut -d: -f2 | sed 's/^0//')
+((td = td + day))
+((th = th + hour))
+((tm = tm + minute))
+done
+# make totals
+minute=$(expr $tm % 60)
+hour=$(expr `echo "$tm / 60 + $th" | bc` % 24)
+day=$(expr `echo "$tm / 60 + $th" | bc` / 24 + $td)
+echo "$user : $day days, $hour hours, $minute minutes logged in" >> /home/scorbin1/public_html/loginTime.html
+done
+echo $FOOTER >> /home/scorbin1/public_html/loginTime.html

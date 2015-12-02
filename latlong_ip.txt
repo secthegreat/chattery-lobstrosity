@@ -1,0 +1,70 @@
+104.156.228.181,US,United States,CA,California,San Jose,95113,America/Los_Angeles,37.33,-121.89,807
+104.185.141.252,US,United States,CA,California,Modesto,95350,America/Los_Angeles,37.67,-121.02,862
+108.253.145.134,US,United States,CA,California,Turlock,95380,America/Los_Angeles,37.47,-120.86,862
+108.93.94.55,US,United States,CA,California,Turlock,95382,America/Los_Angeles,37.54,-120.85,862
+138.229.188.179,US,United States,CA,California,Turlock,95380,America/Los_Angeles,37.47,-120.86,862
+172.56.41.242,US,United States,CA,California,Los Angeles,90013,America/Los_Angeles,34.05,-118.24,803
+2001:470:0:28f::2,US,United States,CA,California,Fremont,94539,America/Los_Angeles,37.52,-121.90,807
+207.62.172.6,US,United States,CA,California,Stockton,95207,America/Los_Angeles,38.00,-121.33,862
+2600:3c01::f03c:91ff:fec8:98b7,US,United States,NJ,New Jersey,Absecon,08205,America/New_York,39.49,-74.48,504
+2601:203:0:4d77:88e2:849b:1e52:9f6c,US,United States,CA,California,Modesto,95355,America/Los_Angeles,37.68,-120.95,862
+2601:203:0:6e73:d4f3:c262:1cb9:3b1f,US,United States,CA,California,Modesto,95355,America/Los_Angeles,37.68,-120.95,862
+2601:203:0:d373:51a3:343f:db34:9290,US,United States,CA,California,Modesto,95355,America/Los_Angeles,37.68,-120.95,862
+2601:203:101:7a9:d586:4a40:15e5:f059,US,United States,CA,California,Modesto,95350,America/Los_Angeles,37.67,-121.02,862
+2601:203:102:5697:6806:5846:ef2e:1e22,US,United States,CA,California,Modesto,95354,America/Los_Angeles,37.64,-120.97,862
+2601:203:102:5697:c9c0:3a09:779c:781,US,United States,CA,California,Modesto,95354,America/Los_Angeles,37.64,-120.97,862
+2601:203:1:8eb4:9128:ffdf:13d7:a5f9,US,United States,CA,California,Modesto,95355,America/Los_Angeles,37.68,-120.95,862
+2601:203:2:956:2116:78a0:a89f:2795,US,United States,CA,California,Modesto,95355,America/Los_Angeles,37.68,-120.95,862
+2601:203:2:956:8c9e:f5b9:a7cb:dc3f,US,United States,CA,California,Modesto,95355,America/Los_Angeles,37.68,-120.95,862
+2601:203:2:bea6:e573:2eac:e3cd:906d,US,United States,CA,California,Modesto,95355,America/Los_Angeles,37.68,-120.95,862
+2601:203:80:c1d:3cb3:a645:6a30:4bbe,US,United States,CA,California,Modesto,95350,America/Los_Angeles,37.67,-121.02,862
+2601:203:80:c1d:ec09:b5ec:dd0:27a3,US,United States,CA,California,Modesto,95350,America/Los_Angeles,37.67,-121.02,862
+2601:205:4101:8b6:8d51:37e3:2a3a:6e8,US,United States,CA,California,Stockton,95209,America/Los_Angeles,38.05,-121.36,862
+2602:301:7717:54a0:a02e:76ac:65b3:8bd6,US,United States,CA,California,Turlock,95382,America/Los_Angeles,37.54,-120.85,862
+2602:304:ce8b:8b70:5059:71f4:2a1b:2ae,US,United States,CA,California,Riverbank,95367,America/Los_Angeles,37.73,-120.95,862
+2602:304:ce8b:8b70:c548:a95b:ba5c:d109,US,United States,CA,California,Riverbank,95367,America/Los_Angeles,37.73,-120.95,862
+2602:304:ce8b:8b70:d4b4:fc28:8f34:12db,US,United States,CA,California,Riverbank,95367,America/Los_Angeles,37.73,-120.95,862
+2602:306:32c6:b420:109a:9c5a:7a9b:a320,US,United States,CA,California,Modesto,95350,America/Los_Angeles,37.67,-121.02,862
+2602:306:32c6:b420:617d:f3bb:fb7d:f11d,US,United States,CA,California,Modesto,95350,America/Los_Angeles,37.67,-121.02,862
+2602:306:32c6:b420:6497:fd0c:82fc:5bd4,US,United States,CA,California,Modesto,95350,America/Los_Angeles,37.67,-121.02,862
+2602:306:8b42:8900:35a7:8b7c:bc63:430b,US,United States,CA,California,Yuba City,95993,America/Los_Angeles,39.05,-121.73,862
+2602:306:8b42:8900:5437:d4b3:d208:ea21,US,United States,CA,California,Yuba City,95993,America/Los_Angeles,39.05,-121.73,862
+2602:306:8b42:8900:f175:d957:4a40:e9ff,US,United States,CA,California,Yuba City,95993,America/Los_Angeles,39.05,-121.73,862
+2602:306:b824:a4b0:2ce3:8e01:e83c:f990,US,United States,CA,California,Stockton,95207,America/Los_Angeles,38.00,-121.33,862
+2602:306:bcac:e1e0:42c:2aec:e4d9:9689,US,United States,CA,California,Sacramento,95815,America/Los_Angeles,38.61,-121.46,862
+2602:306:cc86:55e0:7d4e:d8cb:bd13:779d,US,United States,CA,California,Lodi,95240,America/Los_Angeles,38.12,-121.17,862
+2602:306:cec4:d450:4cd2:e01f:f5e5:23a9,US,United States,CA,California,Grass Valley,95945,America/Los_Angeles,39.22,-121.06,862
+2605:e000:a94c:ce00:b509:b72e:b18a:52fd,US,United States,CA,California,Hemet,92545,America/Los_Angeles,33.74,-117.06,803
+50.143.229.75,US,United States,CA,California,Sacramento,95815,America/Los_Angeles,38.61,-121.46,862
+50.173.172.207,US,United States,CA,California,Modesto,95355,America/Los_Angeles,37.68,-120.95,862
+50.250.177.107,US,United States,CA,California,Fresno,93703,America/Los_Angeles,36.77,-119.76,866
+50.8.169.33,US,United States,CA,California,Carmichael,95608,America/Los_Angeles,38.63,-121.33,862
+66.215.124.249,US,United States,CA,California,Ripon,95366,America/Los_Angeles,37.74,-121.12,862
+67.182.80.94,US,United States,CA,California,Modesto,95354,America/Los_Angeles,37.64,-120.97,862
+67.187.207.5,US,United States,CA,California,Modesto,95350,America/Los_Angeles,37.67,-121.02,862
+68.116.87.253,US,United States,CA,California,Delhi,95315,America/Los_Angeles,37.43,-120.78,866
+68.186.58.155,US,United States,CA,California,Turlock,95380,America/Los_Angeles,37.47,-120.86,862
+68.186.60.86,US,United States,CA,California,Turlock,95382,America/Los_Angeles,37.54,-120.85,862
+68.189.117.50,US,United States,CA,California,Riverbank,95367,America/Los_Angeles,37.73,-120.95,862
+68.189.78.11,US,United States,CA,California,Turlock,95382,America/Los_Angeles,37.54,-120.85,862
+68.189.78.217,US,United States,CA,California,Turlock,95382,America/Los_Angeles,37.54,-120.85,862
+73.12.128.192,US,United States,CA,California,Oakdale,95361,America/Los_Angeles,37.77,-120.85,862
+73.12.241.202,US,United States,CA,California,Oakdale,95361,America/Los_Angeles,37.77,-120.85,862
+73.151.84.219,US,United States,CA,California,Manteca,95337,America/Los_Angeles,37.74,-121.24,862
+73.220.138.213,US,United States,CA,California,Modesto,95355,America/Los_Angeles,37.68,-120.95,862
+73.41.184.244,US,United States,CA,California,Modesto,95356,America/Los_Angeles,37.72,-121.04,862
+73.48.251.82,US,United States,CA,California,Modesto,95350,America/Los_Angeles,37.67,-121.02,862
+74.116.44.228,US,United States,CA,California,Oakdale,95361,America/Los_Angeles,37.77,-120.85,862
+76.125.42.103,US,United States,CA,California,Lodi,95240,America/Los_Angeles,38.12,-121.17,862
+76.125.49.89,US,United States,CA,California,Manteca,95337,America/Los_Angeles,37.74,-121.24,862
+76.127.107.42,US,United States,CA,California,Modesto,95350,America/Los_Angeles,37.67,-121.02,862
+76.20.116.250,US,United States,CA,California,Tracy,95377,America/Los_Angeles,37.62,-121.46,862
+76.228.30.47,US,United States,CA,California,Modesto,95358,America/Los_Angeles,37.65,-121.14,862
+76.232.188.215,US,United States,CA,California,Riverbank,95367,America/Los_Angeles,37.73,-120.95,862
+76.248.30.70,US,United States,CA,California,Oakdale,95361,America/Los_Angeles,37.77,-120.85,862
+97.84.117.68,US,United States,CA,California,Turlock,95382,America/Los_Angeles,37.54,-120.85,862
+97.94.152.253,US,United States,CA,California,Turlock,95382,America/Los_Angeles,37.54,-120.85,862
+97.94.154.170,US,United States,CA,California,Turlock,95382,America/Los_Angeles,37.54,-120.85,862
+97.94.154.7,US,United States,CA,California,Turlock,95380,America/Los_Angeles,37.47,-120.86,862
+97.94.155.253,US,United States,CA,California,Turlock,95382,America/Los_Angeles,37.54,-120.85,862
+99.25.165.114,US,United States,CA,California,Ceres,95307,America/Los_Angeles,37.59,-120.96,862

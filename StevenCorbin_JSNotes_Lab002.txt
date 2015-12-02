@@ -1,0 +1,53 @@
+Steven Corbin
+Lab_002: JS good/bad parts video NOTES
+CSCI 252
+
+Javascript: the bad (and good) parts w/ Greg Crockford video @ https://www.youtube.com/watch?v=hQVTIJBZook
+
+(11:48) he discusses some bad parts:
+Global Variables only in javascript (except when you use the object literal functions to keep them private)
+
++ can add and concatenate, I believe this was the problem with my addTwoNumbers lab, for whatever reason JS presumed I was adding strings. This has since been fixed as I declared the inputs to be numbers (yay)
+
+JS tends to insert semicolons when it thinks it needs them and can lead to silent errors and other problems. I have noticed this.
+
+typeof can identify things as objects and other unusual things. I thought it funny that NaN (standing for "not a number") has the typeof = Number.
+
+with and eval are usually used incorrectly so I need to figure out how to do it properly
+
+JS arrays sound different than in c++, I'll have to better figure out how they should to be used.
+
+== and != shouldnt be used evidently, use ===
+
+(18:52) Heritage
+do not use blockless statements, use { }
+
+for in can cause problems if used in correctly
+
+floating point arithmetic in JS can be unusually imprecise
+
+++ and -- not very reliable (I dont use them often anyway)
+
+switch; I hated them at first but now enjoy using them occasionally. Need to not intentionally fall to next statement.
+
+--------------------------------------------
+
+The good parts; Learn to use properly!
+
+Lambda (I liked this in Python, hopefully it is somewhat similar)
+
+Dynamic Objects: can add properties to them etc.
+
+Loose typing works well if you use it correctly (so learn that as well)
+
+Object Literals prototypal inheritance
+
+(29:00)+
+Object creation sounded a lot more user friendly and one is able to utilize "private" variables and functions using it.
+
+block {
+}; is correct in JS
+
+(42:40)+
+JSLint code quality tool by Doug Crockford. (also a JSHint tool elsewhere on the net)
+

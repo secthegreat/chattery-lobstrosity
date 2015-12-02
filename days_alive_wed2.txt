@@ -1,0 +1,23 @@
+#!/bin/bash
+# // ; /* -xv displays whats going on as script runs */
+# Lab 2
+#Steven Corbin
+echo -n "Greetings, please enter your name: "
+read NAME
+echo -n "Hello $NAME, how are you today? ...Wait, Don't answer that... Enter your Birthdate (mm/dd/yy), please. "
+read DOB
+
+secondsAlive=$(date --date="$DOB" +%s)
+#absDate=$(echo ${secondsAlive#-}) thought I would need this... but subtracting a negative adds it!
+todaySeconds=$(date +%s)
+sum=$(($todaySeconds - ($secondsAlive)))
+secondsInDay=86400
+daysAlive=$(($sum / $secondsInDay))
+
+#var1=$(command)
+
+echo -n "Congratulations $NAME, you have been alive $daysAlive days, I am really proud of you, so here's a funny blurb! "
+FUN=$(fortune)
+echo $FUN
+
+# chmod +x filename

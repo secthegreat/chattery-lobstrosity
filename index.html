@@ -1,0 +1,128 @@
+<!--  Steven Corbin
+      Fall 2015: Linux/Unix (210) and Programming for the Web (252)
+      Lab 000: Index.html "pretty webpage"
+      //-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="siteFormat.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cabin:bold">
+<style>
+</style>
+</head>
+<body>
+
+<div id="header">
+<h1>SCORBIN FALL 2015</h1>
+</div>
+
+<div id="menu">
+CSCI 210<br />
+CSCI 252<br />
+<br />
+</div>
+
+<div id="selection">
+<h2>CSCI 210</h2>
+<u>Linux/UNIX Operating Systems:</u>
+<h3>Lab_009: Last command (and others) to webpage</h3>
+<a href="loginTime.html" rel="nofollow">Last + Awk + Grep + Loops to Webpage</a>
+<br />
+
+</div>
+
+<div id="selection">
+<h2>CSCI 252</h2>
+<p>
+<u>JavaScript, PHP, CSS and HTML Programming for the Web:</u>
+
+<h3>Lab_001: addTwoNumbers</h3>
+<h4>type numbers in the two fields and Get Sum!</h4>
+<a href="Lab001.html" rel="nofollow">Lab 001: addTwoNums</a>
+<p>
+<input type="number" id="num1" />
+<input type="number" id="num2" />
+<input type="button" id="getSum" value="Get Sum!" />
+</p>
+
+<p id="answer"></p>
+<script src="addTwoNumbers.js"></script>
+
+<h3>Lab_002: JS Video Notes</h3>
+<a href="StevenCorbin_JSNotes_Lab002.txt">Notes Lab 2</a>
+<br />
+<h3>Lab_003: d6 Roll</h3>
+<h4>Clicking "Roll" will roll a six-sided die and display your result!<br />It takes seconds to load the first few rolls</h4>
+<h1><p id="d6Roll"></p></h1><img id="dieImage" src="d6_6.jpg" width="80" height="80"><button type="button" onclick="rollTheDice()">Roll</button>
+
+<script src="dieRoll.js"></script>
+
+<h3>Lab_004: Including another pages content</h3>
+<iframe src="http://bl.ocks.org/mbostock/raw/1345853/" width="971" height="511">
+<a href="http://bl.ocks.org/mbostock/raw/1345853/">Wow!, Your browser is too old to display this content, click here.</a>
+</iframe>
+<br />
+
+<h3>Lab_005: Text to Morse Code</h3>
+<p>Input text below to translate it into Morse Code:<br />
+<input type="text" id="character" /><input type="button" onClick="textToMorse()" value="Text to Morse" />
+</p>
+<br />
+<h1 id="translation"></h1>
+
+<script>
+function textToMorse() {
+	var morseChar = document.getElementById("character").value.toUpperCase();
+	var codeLibrary = { 
+		0: "----- ", 1: ".---- ", 2: "..--- ", 3: "...-- ", 4: "....- ", 5: "..... ", 6: "-.... ", 7: "--... ",	8: "---.. ", 9: "----. ",
+		A: ".- ", B: "-... ", C: "-.-. ", D: "-.. ", E: ". ", F: "..-. ", G: "--. ", H: ".... ", I: ".. ", J: ".--- ", K: "-.- ",
+		L: ".-.. ", M: "-- ", N: "-. ", O: "--- ", P: ".--. ", Q: "--.- ", R: ".-. ", S: "... ", T: "- ", U: "..- ", V: "...- ",
+		W: ".-- ", X: "-..- ", Y: "-.-- ", Z: "--.. "
+	};
+	var i = 0;
+	var message = "";
+	while (i < morseChar.length) {
+		message += codeLibrary[morseChar.charAt(i)] || " ";
+		i += 1;
+	}
+	document.getElementById("translation").innerHTML = message;
+};
+</script>
+<br />
+
+<h3>Lab_006: Map Marker placement on google map</h3>
+<a href="Lab006.html" rel="nofollow">Earths tallest mountains</a>
+<br />
+<h3>Lab_008: Map of unique IP addresses of failed logins (Red) and visitors (Blue)</h3>
+<a href="Lab008.html" rel="nofollow">Visitors and Login Failures Map</a>
+<br />
+<h3>Lab_009: </h3>
+<a href="252.html" rel="nofollow">Links to past works</a>
+<br />
+
+<h3>Lab_010: </h3>
+<a href="portfolio.html" rel="nofollow"><strong>My Portfolio Page</strong></a>
+<br />
+
+<h3>Lab_011: </h3>
+<a href="Lab011.html" rel="nofollow">Node.js "Hello World" code</a>
+<br />
+<p><br /></p>
+
+</div>
+
+<br />
+<div id="foot">
+phillipsd.org/~scorbin1
+</div>
+<script>
+window.alert("Hello World!\nWelcome to Steven Corbin's CSCI page!");
+</script>
+
+<!--<script>
+ SCRIPT HERE
+</script> -->
+
+</body>
+</html>

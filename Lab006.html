@@ -1,0 +1,98 @@
+<!--
+Steven Corbin
+CSCI 252: 5296
+Lab006: Map Markers
+
+API key: AIzaSyA7jDodmcabbc8Bdt8QLjSjknOnFQbmEIU
+
+//-->
+
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="siteFormat.css">
+<style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+
+<script> //                                                                   PUT IN .JS
+function initMap() {
+
+  var summitLatLng1 = {lat: 27.988056, lng: 86.925278}; // everest
+  var summitLatLng2 = {lat: -32.653431, lng: -70.011083}; // aconcagua
+  var summitLatLng3 = {lat: 63.0695, lng: -151.0074}; // denali
+  var summitLatLng4 = {lat: -4.078889, lng: 137.158333}; // carstenz pyramid
+  var summitLatLng5 = {lat: -3.075833, lng: 37.353333}; // killimanjaro
+  var summitLatLng6 = {lat: -78.525483, lng: -85.617147}; // vinson massif
+  var summitLatLng7 = {lat: 45.833611, lng: 6.865}; // blanc
+  var summitLatLng8 = {lat: 43.355, lng: 42.439167}; // elbrus
+  
+  //                                                                          Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: summitLatLng1,
+    scrollwheel: true,
+    zoom: 1
+  });
+
+  //                                                                          marker setting...
+  var marker18 = new google.maps.Marker({
+    map: map,
+    position: summitLatLng1,
+    title: 'Mt. Everest',
+	icon: 'pink_MarkerA.png'
+  });
+  var marker19 = new google.maps.Marker({
+    map: map,
+    position: summitLatLng2,
+    title: 'Aconcagua',
+	icon: 'pink_MarkerB.png'
+  });
+  var marker20 = new google.maps.Marker({
+    map: map,
+    position: summitLatLng3,
+    title: 'Denali',
+	icon: 'pink_MarkerC.png'
+  });
+  var marker21 = new google.maps.Marker({
+    map: map,
+    position: summitLatLng4,
+    title: 'Carstenz Pyramid',
+	icon: 'pink_MarkerD.png'
+  });
+  var marker22 = new google.maps.Marker({
+    map: map,
+    position: summitLatLng5,
+    title: 'Mt. Killimanjaro',
+	icon: 'pink_MarkerE.png'
+  });
+  var marker23 = new google.maps.Marker({
+    map: map,
+    position: summitLatLng6,
+    title: 'Mt. Vinson Massif',
+	icon: 'pink_MarkerF.png'
+  });
+  var marker24 = new google.maps.Marker({
+    map: map,
+    position: summitLatLng7,
+    title: 'Mt. Blanc',
+	icon: 'pink_MarkerG.png'
+  });
+  var marker25 = new google.maps.Marker({
+    map: map,
+    position: summitLatLng8,
+    title: 'Mt. Elbrus',
+	icon: 'pink_MarkerH.png'
+  });
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7jDodmcabbc8Bdt8QLjSjknOnFQbmEIU&callback=initMap"></script>
+
+</body>
+
+</html>

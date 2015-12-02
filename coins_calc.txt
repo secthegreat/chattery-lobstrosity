@@ -1,0 +1,29 @@
+#!/bin/bash
+# calc_coins Lab 4 (and Lab 6)
+# Steven Corbin
+#
+echo "Please enter your name "
+read NAME
+echo "Hello $NAME, we're going to calculate your change on hand."
+echo "Enter the number of Quarters you have: "
+read QTR
+echo "Enter the number of Dimes you have: "
+read DIME
+echo "Enter the number of Nickles you have: "
+read NICK
+echo "Enter the number of 'Pennies' you have: "
+read PENNY
+#
+TOTAL=$(echo "($QTR * .25)+($DIME * .10 )+($NICK * .05)+($PENNY * .01)" | bc)
+#
+echo $NAME", You have \$"$TOTAL "in change"
+#
+TODAY=$(date +%Y%m%d%H%M%S)
+#
+echo $TODAY" | "$NAME" | "$TOTAL >> logFile
+#
+cat coins_table | sqlite3 coins_database.sql3
+#
+# echo 'INSERT INTO TABLE (ts,name,amt) VALUES ($TODAY,$NAME,);' | sqlite3 coins_database.sql3
+# > overwrites doc w/ info
+# >> appends to doc

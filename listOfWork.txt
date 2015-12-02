@@ -1,0 +1,26 @@
+#!/bin/bash
+# 210
+# Steven Corbin
+# Lab 7 'list of work'
+# index of previous work, cat each lab with a pause
+
+# list.txt is a list of your lab
+LLST=$(cat /home/scorbin1/inclass/210/list.txt)
+
+# change dir and exit if fail
+cd /home/scorbin1/inclass/210 || exit
+
+# cat each file and wait for user
+for i in $LLST
+do
+clear
+ echo "$i"
+ cat "$i"
+read -r -p 'Press [Enter] Key to continue...'
+done
+
+# echo coins database
+echo "select * from coinsTable;" | sqlite3 /home/scorbin1/inclass/210/coins_database.sql3
+read -r -p 'Press [Enter] Key to continue...'
+# wait for user and finally, cat loginTime.log script
+cat /home/scorbin1/inclass/210/loginTime.log

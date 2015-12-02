@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*  Steven Corbin
+    Portfolio.html .css file
+*/
+
+#header {
+    background-color:#f56403;
+    border-color: red;
+    border-style: solid;
+    color:#000000;
+    padding:8px;
+    text-align:center;
+}
+#menu {
+    background-color:#f56403;
+    border-color: red;
+    border-style: solid;
+    float:left;
+    height:1100px;
+    line-height:18px;
+    padding:3px;
+    width:160px;
+}
+#selection {
+    border-color: black;
+    border-style: solid;
+    color:#000000;
+    left: 182px;
+    position: absolute;
+    width:1145px;
+}
+#foot {
+    background-color:#f56403;
+    border-color: red;
+    border-style: solid;
+    clear:both;
+    color:#000000;
+    padding:2px;
+    text-align:right;
+}
+body {
+    background-image: url("bgpattern.jpg");
+    color:#000000;
+    padding: 2px;
+  
+}
+#translation {
+		font-family: 'Cabin';	
+		font-size: 75px;
+	}
+a:link {
+    background-color:transparent;
+    color: blue;
+    text-decoration: bold;
+}
+a:visited {
+    background-color:transparent;
+    color: purple;
+    text-decoration: bold;
+}

@@ -1,0 +1,43 @@
+<!--
+Steven Corbin
+CSCI 252: 5296
+Lab005: Text to Morse Code -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="siteFormat.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cabin:bold">
+	<meta charset="utf-8">
+	<title>
+		Lab 5
+	</title>
+</head>
+<body>
+<h3>Lab_005: Text to Morse Code</h3>
+<p>Input text below to translate it into Morse Code:<br />
+<input type="text" id="character" /><input type="button" onClick="textToMorse()" value="Text to Morse" />
+</p>
+<br />
+<h1 id="translation"></h1>
+
+<script>
+function textToMorse() {
+	var morseChar = document.getElementById("character").value.toUpperCase();
+	var codeLibrary = { 
+		0: "----- ", 1: ".---- ", 2: "..--- ", 3: "...-- ", 4: "....- ", 5: "..... ", 6: "-.... ", 7: "--... ",	8: "---.. ", 9: "----. ",
+		A: ".- ", B: "-... ", C: "-.-. ", D: "-.. ", E: ". ", F: "..-. ", G: "--. ", H: ".... ", I: ".. ", J: ".--- ", K: "-.- ",
+		L: ".-.. ", M: "-- ", N: "-. ", O: "--- ", P: ".--. ", Q: "--.- ", R: ".-. ", S: "... ", T: "- ", U: "..- ", V: "...- ",
+		W: ".-- ", X: "-..- ", Y: "-.-- ", Z: "--.. "
+	};
+	var i = 0;
+	var message = "";
+	while (i < morseChar.length) {
+		message += codeLibrary[morseChar.charAt(i)] || " ";
+		i += 1;
+	}
+	document.getElementById("translation").innerHTML = message;
+};
+</script>
+<br />
+</body>
+</html>

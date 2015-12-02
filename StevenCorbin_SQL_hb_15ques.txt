@@ -1,0 +1,46 @@
+Henry Books 
+
+1. List the author number and last name for every author.
+   SQLite3 - SELECT AuthorNum, AuthorLast FROM Author;
+
+2. List the complete Branch table (all rows and all columns).
+   SQLite3 - SELECT * from Branch;
+
+3. List the name of every publisher located in Boston.
+   SQLite3 - SELECT * FROM Publisher WHERE City="Boston";
+
+4. List the name of every publisher not located in Boston.
+   SQLite3 - SELECT * FROM Publisher WHERE City<>"Boston";
+
+5. List the name of every branch that has at least nine employees.
+   SQLite3 - SELECT * FROM Branch WHERE NumEmployees >="9";
+
+6. List the book code and title of every book that has the type SFI.
+   SQLite3 - SELECT BookCode,Title FROM Book WHERE Type="SFI";
+
+7. List the book code and title of every book that has the type SFI and that is a paperback.
+   SQLite3 - SELECT BookCode,Title FROM Book WHERE (Type="SFI" AND Paperback='Y');
+
+8. List the book code and title of every book that has the type SFI or that has the publisher code PE.
+   SQLite3 - SELECT BookCode,Title FROM Book WHERE (Type="SFI" AND PublisherCode='PE');
+
+9. List the book code, title, and price for each book with a price that is greater than $5 but less than $10.
+   SQLite3 - SELECT BookCode,Title FROM Book WHERE (Price>"5" AND Price<'10');
+
+10. List the book code and title of every book that has the type FIC and a price of less than $10.
+    SQLite3 - SELECT BookCode,Title FROM Book WHERE (Type"FIC" AND Price<'10');
+
+11. (Bonus) Customers who are part of a special program get a 15% discount off regular book prices. To determine the discounted prices, list the book code, title, and discounted price of every book. (Your calculated column should determine 85% of the current price, which is 100% less a 15% discount.) 
+	SQLite3 - SELECT BookCode,Title,(Price*.85) FROM Book;
+
+12. List the book code and title of every book that has the type SFI, HOR, or ART.
+    SQLite3 - SELECT * from Book WHERE (Type="SFI") OR (Type="HOR") OR (Type="ART");
+    
+13. List the book code, title, and publisher code for all books. Sort the results by title within publisher code.
+    SQLite3 - SELECT BookCode,Title,PublisherCode FROM Book ORDER BY PublisherCode ASC;
+	
+14. How many books have the type SFI?
+    There are 3 books in the HenryBooks database with the Type "SFI".
+	
+15. Calculate the average price for each type of book.
+    SQLite3 - SELECT Type,AVG(Price) FROM Book

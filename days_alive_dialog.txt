@@ -1,0 +1,22 @@
+#!/bin/bash
+# -xv displays whats going on as script runs
+# Lab 8 days alive with dialog
+# Steven Corbin
+name=$(dialog --title "Name:" --backtitle "Days Alive script" --inputbox "Enter your first name: " 8 50 3>&1 1>&2 2>&3 3>&-)
+
+dob=$(dialog --title "Date of Birth:" --backtitle "Days Alive script" --calendar "Enter your date of birth: " 0 0 1 1 1970 3>&1 1>&2 2>&3 3>&-)
+
+secondsAlive=$(date --date="$dob" +%s)
+
+todaySeconds=$(date +%s)
+sum=$(($todaySeconds - ($secondsAlive)))
+secondsInDay=86400
+daysAlive=$(($sum / $secondsInDay))
+
+#var1=$(command)
+fun=$(fortune)
+dialog --title 'Days alive and Fortune' --backtitle 'Days Alive script' --msgbox "$name, you have been alive $daysAlive days!\n\nHeres your fortune: $fun" 10 50
+
+#echo -n "Congratulations $name, you have been alive $daysAlive days, I am really proud of you, heres your fortune $fun "
+
+# chmod +x filename
