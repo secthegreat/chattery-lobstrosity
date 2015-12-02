@@ -16,7 +16,7 @@
     border-color: red;
     border-style: solid;
     float:left;
-    height:1100px;
+    height:450px;
     line-height:18px;
     padding:3px;
     width:160px;
@@ -39,7 +39,7 @@
     text-align:right;
 }
 body {
-    background-image: url("bgpattern.jpg");
+    background-image: url("fresh_snow.png");
     color:#000000;
     padding: 2px;
   
